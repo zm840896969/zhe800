@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/zhe800.css" />
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/轮播.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zhe800header.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zhe800content.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/zhe800footer.js" type="text/javascript" charset="utf-8"></script>
+	  <!--  <script src="js/gouwuche.js" type="text/javascript" charset="utf-8"></script>-->
+	    <script src="js/cookie的封装.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="sidebar">
+			<ul>
+				<li>
+					<a href="我的购物车.html"><img src="img/images/side(0).jpg" /><em>购物车</em><span class="cart_num">0</span></a>
+				</li>
+				<li>
+					<a href=""><img src="img/images/side (1).jpg" /></a>
+					<div>我的订单</div>
+				</li>
+				<li>
+					<a href=""><img src="img/images/side (2).jpg" /></a>
+					<div>我的优惠券</div>
+				</li>
+				<li>
+					<a href=""><img src="img/images/side (3).jpg" /></a>
+					<div>我的收藏</div>
+				</li>
+				<li>
+					<a href=""><img src="img/images/side (4).jpg" /></a>
+					<div>卖家消息</div>
+				</li>
+				<li class="yingbi">
+					<a href=""><img src="img/images/side(9).jpg" class="tiao" />
+						<img src="img/images/side(10).jpg" class="tiao_line" />
+					</a>
+					<div>想领钱，先签到 积分抵现又换礼
+					</div>
+				</li>
+				<li class="sidebar_erweima">
+					<a href="#"><img src="img/images/side (5).jpg" /></a>
+					<div id="">
+						<a href=""><img src="img/myerweima.jpg" /></a>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="img/images/side (6).jpg" /></a>
+					<div>常见问题</div>
+				</li>
+
+				<li>
+					<a href="#"><img src="img/images/side(7).jpg" /></a>
+					<div>意见反馈</div>
+				</li>
+
+				<li class="sidebar_lastli">
+					<a href="#"><img src="img/images/side(8).jpg" /></a>
+					<div>回到顶部</div>
+				</li>
+
+			</ul>
+
+		</div>
+
+		<div class="headerbox">
+			<div id="" class="header">
+				<ul>
+					<li>
+						<a href=""><span>团800旗下网站</span></a>
+					</li>
+					<li class="phone">
+						<a href=""><i><img src="img/phone.png"/></i><span>手机版</span></a>
+
+						<div id="" class="erweima">
+							<img src="img/erweima.jpg" />
+						</div>
+
+					</li>
+					<li>
+						<a href=""><span>QQ登录</span></a>
+					</li>
+					<li>
+						<a href="zhe800登录.html"><span class="denglu">登录 免费注册</span></a>
+					</li>
+					<li>
+						<a href=""><span>我的订单</span></a>
+					</li>
+					<li>
+						<a href="我的购物车.html"><i><img src="img/cart.png"/></i> <span>购物车 <span class="cart_num"> 0 </span></span>
+						</a>
+					</li>
+					<li>
+						<a href=""><span>帮助中心</span></a>
+					</li>
+					<li>
+						<a href="" class="last"><span>卖家中心</span></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="logo">
+				<h1><a href=""><img src="img/logo_zhe800.png"/></a></h1>
+				<form action="" method="post" class="_search">
+					<input type="text" id="" value="" placeholder="睡衣" class="txt" />
+					<input type="button" value="搜索" class="sub" />
+					<div id="" class="history">
+						<div id="" class="_record">
+							<span>历史记录</span>
+
+							<p><img src="img/sou.png" /></p>
+
+						</div>
+						<div id="" class="_recommend">
+							<span>正在热搜</span>
+							<ul>
+
+								<li>
+									<a href="#">保温杯</a>
+								</li>
+								<li>
+									<a href="#">衬衫</a>
+								</li>
+								<li>
+									<a href="#">牛仔裤</a>
+								</li>
+								<li>
+									<a href="#">亲子装</a>
+								</li>
+								<li>
+									<a href="#">男士内裤</a>
+								</li>
+								<li>
+									<a href="#">书包</a>
+								</li>
+								<li>
+									<a href="#">卫生纸</a>
+								</li>
+								<li>
+									<a href="#">洗衣液</a>
+								</li>
+								<li>
+									<a href="#">纸尿裤</a>
+								</li>
+								<li>
+									<a href="#">卫衣</a>
+								</li>
+								<li>
+									<a href="#">袜子</a>
+								</li>
+								<li>
+									<a href="#">马甲</a>
+								</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+				</form>
+
+				<div id="" class="_consult">
+					<p>
+						<a href=""><img src="img/one.jpg" /><span>九点上新</span></a>
+					</p>
+					<p>
+						<a href=""><img src="img/two.jpg" /><span>超值低价</span></a>
+					</p>
+					<p>
+						<a href=""><img src="img/three.jpg" /><span>三重保障</span></a>
+					</p>
+
+				</div>
+
+			</div>
+
+			<div id="" class="nav">
+				<ul class="">
+					<li>
+						<a href="#" class="active">首页</a>
+					</li>
+					<li>
+						<a href="#">品牌团</a>
+					</li>
+					<li>
+						<a href="#">优品汇</a>
+					</li>
+					<li>
+						<a href="#">淘宝精选</a>
+					</li>
+					<li>
+						<a href="#">9块9包邮</a>
+					</li>
+					<li>
+						<a href="#">精选预告</a>
+					</li>
+					<li>
+						<a href="#">特卖商城</a>
+					</li>
+					<li>
+						<a href="#">积分商城</a>
+					</li>
+				</ul>
+
+				<div id="" class="_register">
+					<a href=""><img src="img/four.jpg" class="doudong"/><span>签</span><span>到</span><span>享</span><span>好</span><span>礼</span></a>
+
+				</div>
+
+				<div class="clear"></div>
+				<div id="" class="xiena">
+					<a href=""><img src="img/toolbar_xiena.png" /></a>
+					<img src="img/xiana_name.jpg" class="xiena_name" />
+				</div>
+
+			</div>
+
+			<div id="" class="main">
+				<div class="banner">
+					<div class="xienahover"><img src="img/xienahover.jpg" /></div>
+					<ul class="_classify">
+						
+						<li class="classify_li">
+							<a href="">女装</a>、
+							<a href="">内衣</a><span>&gt;</span>
+						<div id="" class="_classify_name" >
+							
+							
+							<div class="_classify_left">
+							  <div class="_top">	
+								<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							
+							 </div>
+							 
+							 <div id="" class="_bottom">
+							 	<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							 </div>
+							 
+							</div>
+							<div id="" class="_classify_right">
+								<div id="" class="a1">
+								  
+								  
+								</div>
+								<div id="" class="a2">
+									
+									
+								</div>
+								<div class="a3">
+									
+									
+								</div>
+								
+							</div>
+							
+							
+							
+						</div>
+						
+						</li>
+						<li class="classify_li">
+							<a href="">男装</a>、
+							<a href="">鞋品</a><span>&gt;</span>
+						<div id="" class="_classify_name">
+							
+							<div class="_classify_left">
+							  <div class="_top">	
+								<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							
+							 </div>
+							 
+							 <div id="" class="_bottom">
+							 	<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							 </div>
+							 
+							</div>
+							<div id="" class="_classify_right">
+								<div id="" class="a1">
+								 
+								  
+								</div>
+								<div id="" class="a2">
+									
+									
+								</div>
+								<div class="a3">
+									
+									
+								</div>
+								
+							</div>
+							
+							
+						</div>
+						</li>
+						<li class="classify_li">
+							<a href="">儿童</a>、
+							<a href="">母婴</a><span>&gt;</span>
+						<div id="" class="_classify_name">
+							
+							<div class="_classify_left">
+							  <div class="_top">	
+								<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							
+							 </div>
+							 
+							 <div id="" class="_bottom">
+							 	<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							 </div>
+							 
+							</div>
+							<div id="" class="_classify_right">
+								<div id="" class="a1">
+								  
+								  
+								</div>
+								<div id="" class="a2">
+									
+									
+								</div>
+								<div class="a3">
+									
+									
+								</div>
+								
+							</div>
+							
+							
+						</div>
+						
+						</li>
+						<li class="classify_li">
+							<a href="">家纺</a>、
+							<a href="">居家</a><span>&gt;</span>
+						<div id="" class="_classify_name">
+							
+							<div class="_classify_left">
+							  <div class="_top">	
+								<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							
+							 </div>
+							 
+							 <div id="" class="_bottom">
+							 	<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							 </div>
+							 
+							</div>
+							<div id="" class="_classify_right">
+								<div id="" class="a1">
+								  
+								  
+								</div>
+								<div id="" class="a2">
+									
+									
+								</div>
+								<div class="a3">
+									
+									
+								</div>
+								
+							</div>
+							
+							
+							
+						</div>
+						
+						</li>
+						<li class="classify_li">
+							<a href="">美食</a>、
+							<a href="">箱包</a><span>&gt;</span>
+						<div id="" class="_classify_name">
+							
+							<div class="_classify_left">
+							  <div class="_top">	
+								<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							
+							 </div>
+							 
+							 <div id="" class="_bottom">
+							 	<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							 </div>
+							 
+							</div>
+							<div id="" class="_classify_right">
+								<div id="" class="a1">
+								  
+								  
+								</div>
+								<div id="" class="a2">
+									
+									
+								</div>
+								<div class="a3">
+									
+									
+								</div>
+								
+							</div>
+							
+							
+						</div>
+						</li>
+						<li class="classify_li">
+							<a href="">数码家电</a><span>&gt;</span>
+						<div id="" class="_classify_name">
+							
+							<div class="_classify_left">
+							  <div class="_top">	
+								<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							
+							 </div>
+							 
+							 <div id="" class="_bottom">
+							 	<h4 class="noborder"><a href="">  </a></h4>
+							    <p>  </p>	
+							 </div>
+							 
+							</div>
+							<div id="" class="_classify_right">
+								<div id="" class="a1">
+								  
+								  
+								</div>
+								<div id="" class="a2">
+									
+									
+								</div>
+								<div class="a3">
+									
+									
+								</div>
+								
+							</div>
+							
+						</div>
+						
+						</li>
+						<li class="classify_li">
+							<a href="">美妆</a>、
+							<a href="">配饰</a><span>&gt;</span>
+						<div id="" class="_classify_name">
+							
+							<div class="_classify_left">
+							  <div class="_top">	
+								<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							
+							 </div>
+							 
+							 <div id="" class="_bottom">
+							 	<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							 </div>
+							 
+							</div>
+							<div id="" class="_classify_right">
+								<div id="" class="a1">
+								  
+								  
+								</div>
+								<div id="" class="a2">
+									
+									
+								</div>
+								<div class="a3">
+									
+									
+								</div>
+								
+							</div>
+							
+							
+						</div>
+						
+						</li>
+						<li class="classify_li">
+							<a href="">文体</a>、
+							<a href="">中老年</a><span>&gt;</span>
+						<div id="" class="_classify_name">
+							
+							<div class="_classify_left">
+							  <div class="_top">	
+								<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							
+							 </div>
+							 
+							 <div id="" class="_bottom">
+							 	<h4><a href="">  </a></h4>
+							    <p>  </p>	
+							 </div>
+							 
+							</div>
+							<div id="" class="_classify_right">
+								<div id="" class="a1">
+								  
+								  
+								</div>
+								<div id="" class="a2">
+									
+									
+								</div>
+								<div class="a3">
+									
+									
+								</div>
+								
+							</div>
+							
+							
+						</div>
+						
+						</li>
+						<li class="last_li">
+							<a href="">今日上新</a><em>丨</em>
+							<a href="">最后抢</a><em>丨</em>
+							<a href="">排行榜</a>
+						</li>
+						<li class="last_li">
+							<a href="">每日十件</a><em>丨</em>
+							<a href="">值得买</a><em>丨</em>
+							<a href="">限量抢</a>
+						</li>
+					</ul>
+					<div class="lunbo_banner">
+						 <div class="pic"><a href=""><img src="img/pic.jpg"/></a></div>
+						<ul class="img">
+							<li><img src="img/banner1.png" /></li>
+							<li><img src="img/banner2.png" /></li>
+							<li><img src="img/banner3.png" /></li>
+							<li><img src="img/banner4.png" /></li>
+							<li><img src="img/banner5.png" /></li>
+
+						</ul>
+
+						<ul class="num">
+							<li class="on"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="pingpai_hot">
+
+					<h3>品牌热卖  <em>·</em> <span> 今日在线品牌989个</span></h3>
+
+					<ul class="">
+						<li>
+							<a href="">女装</a>
+						</li>
+						<li>
+							<a href="">家纺</a>
+						</li>
+						<li>
+							<a href="">儿童</a>
+						</li>
+						<li>
+							<a href="">美妆</a>
+						</li>
+						<li>
+							<a href="">母婴</a>
+						</li>
+						<li>
+							<a href="">男装</a>
+						</li>
+						<li>
+							<a href="">箱包</a>
+						</li>
+						<li>
+							<a href="">内衣</a>
+						</li>
+						<li>
+							<a href="">运动</a>
+						</li>
+						<li>
+							<a href="">鞋品</a>
+						</li>
+						<li>
+							<a href="">美食</a>
+						</li>
+						<li>
+							<a href="">居家</a>
+						</li>
+						<li>
+							<a href="">中老年</a>
+						</li>
+						<li>
+							<a href="">配饰</a>
+						</li>
+						<li>
+							<a href="">数码家电</a>
+						</li>
+						<li class="active1">
+							<a href="">全部品牌</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div id="" class="commodity">
+
+					<ul>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="hot_img">
+					<ul class="_hotimgbox">
+					</ul>
+
+					<ul class="_hotimgboxtwo">
+
+					</ul>
+				</div>
+
+				<div id="" class="limited_buying">
+					<h3>限量抢购</h3>
+					<ul class="buying_time">
+						<li>
+							<a href="">00:00 开抢</a>
+						</li>
+						<li>
+							<a href="">08:00 开抢</a>
+						</li>
+						<li>
+							<a href="">09:00 开抢</a>
+						</li>
+						<li>
+							<a href="">12:00 开抢</a>
+						</li>
+						<li>
+							<a href="">15:00 开抢</a>
+						</li>
+						<li>
+							<a href="">18:00 开抢</a>
+						</li>
+						<li>
+							<a href="">20:00 开抢</a>
+						</li>
+						<li>
+							<a href="">明日预告</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="_buying_imgbox">
+				    <div class="btn btn_l"> &lt; </div>
+				    <div class="btn btn_r"> &gt;</div>
+					<ul>
+
+					</ul>
+                   
+				</div>
+
+				<div class="groom">
+					<h3>热销推荐 <em>·</em></h3>
+					<ul>
+						<li>
+							<a href="">即将下架</a>
+						</li>
+						<li>
+							<a href="">人气爆款</a>
+						</li>
+						<li>
+							<a href="">每日更新</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="groom_img">
+					<ul class="groom_imgbox">
+
+					</ul>
+
+				</div>
+
+				<div class="update pingpai_hot">
+					<h3>今日已更新 <em>·</em><span>8512款</span></h3>
+					<ul>
+						<li>
+							<a href="">默认</a>
+						</li>
+						<li>
+							<a href="">男</a>
+						</li>
+						<li>
+							<a href="">女</a>
+						</li>
+						<li>
+							<a href="">辣妈</a>
+						</li>
+						<li>
+							<a href="">排序</a>
+						</li>
+						<li>
+							<a href="">最新</a>
+						</li>
+						<li>
+							<a href="">最热</a>
+						</li>
+					</ul>
+				</div>
+				<div class="updateimg">
+					<ul class="updateimgbox">
+                        
+                        
+                     
+                   
+					</ul>
+                       
+				</div>
+
+				<div class="Page_number">
+					<ul>
+						<li class="home_page">
+							<a href="">1</a>
+						</li>
+						<li>
+							<a href="">2</a>
+						</li>
+						<li>
+							<a href="">3</a>
+						</li>
+						<li>
+							<a href="">4</a>
+						</li>
+						<li>
+							<a href="">...</a>
+						</li>
+						<li>
+							<a href="">119</a>
+						</li>
+						<li>
+							<a href="">下一页</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="groom_img last_groom">
+					<ul class="groom_imgbox">
+
+					</ul>
+
+				</div>
+
+			</div>
+
+<div class="dingbu">	
+
+<div id="" class="shang">
+	<a href="">首页</a>
+	<a href="">品牌团</a>
+	<a href="">优品汇</a>
+	<a href="">淘宝精选</a>
+	<a href="">9块9包邮</a>
+	<a href="">20元封顶</a>
+	<a href="">精选预告</a>
+	<a href="">特卖商城</a>
+	<a href="">今日上新</a>
+	<a href="">即将下架</a>
+	<a href="">每日10件</a>
+	<a href="">排行榜</a>
+	
+	<p><input type="text" id="" value="" placeholder="搜全站" class="shuru"/><input type="button" id="" value="搜索" class="sousuo"/></p>
+</div>
+    <div id="" class="xia">
+      
+      <a href="">全部</a>
+      <a href="">女装</a>
+      <a href="">男装</a>
+      <a href="">鞋品</a>
+      <a href="">居家</a>
+      <a href="">美妆</a>
+      <a href="">数码家电</a>
+      <a href="">儿童</a> 	
+      <a href="">母婴</a>
+      <a href="">箱包</a>
+      <a href="">美食</a>
+      <a href="">内衣</a>
+      <a href="">家纺</a>
+      <a href="">配饰</a>
+      <a href="">文体</a>
+      <a href="">中老年</a>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+			<div class="footer">
+				<div class="top">
+					<ul class="About_us">
+						<h6>关于我们</h6>
+						<li>
+							<a href="">关于我们</a>
+						</li>
+						<li>
+							<a href="">诚聘英才</a>
+						</li>
+						<li>
+							<a href="">网站服务条款</a>
+						</li>
+						<li>
+							<a href="">用户服务协议</a>
+						</li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+					</ul>
+
+					<ul class="Shopping Directory">
+						<h6>购物指南</h6>
+						<li>
+							<a href="">新手玩转折800</a>
+						</li>
+						<li>
+							<a href="">订单查询</a>
+						</li>
+						<li>
+							<a href="">会员介绍</a>
+						</li>
+						<li>
+							<a href="">积分攻略</a>
+						</li>
+						<li>
+							<a href="">帮助中心</a>
+						</li>
+					</ul>
+
+					<ul class="guarantee">
+						<h6>消费者保障</h6>
+						<li>
+							<a href="">人工验货</a>
+						</li>
+						<li>
+							<a href="">退货退款政策</a>
+						</li>
+						<li>
+							<a href="">运费补贴卡</a>
+						</li>
+						<li>
+							<a href="">无忧售后</a>
+						</li>
+						<li>
+							<a href="">先行赔付</a>
+						</li>
+					</ul>
+
+					<ul class="cooperation">
+						<h6>商务合作</h6>
+						<li>
+							<a href="">商家报名</a>
+						</li>
+						<li>
+							<a href="">友情链接</a>
+						</li>
+						<li>
+							<a href="">廉正举报</a>
+						</li>
+
+					</ul>
+
+					<ul class="zmlai">
+						<h6>下次怎么来？</h6>
+						<li>记住域名：
+							<a href="" class="red">zhe800.com</a>
+						</li>
+						<li>百度搜索：<img src="img/sub.jpg" alt="" /></li>
+						<li>
+							<a href="">下载桌面快捷方式</a>
+						</li>
+						<li>收藏本站
+							<a href="">加入收藏</a>
+						</li>
+						<li>订阅本站：</li>
+						<li><input type="text" name="" id="" value="" placeholder="输入您的邮件" class="email_txt" /><input type="submit" id="" value="订阅" class="dyue_sub" /></li>
+					</ul>
+					<ul class="xiazaiapp">
+						<h6>下载手机版</h6>
+						<li><img src="img/erweima.jpg" />
+							<div class="shuoming">
+								<p>扫描下载折800</p>
+								<p>把握折扣在手心</p>
+								<p>把潮流带着身边</p>
+							</div>
+
+						</li>
+
+					</ul>
+				</div>
+				<div class="friendly_link">
+					<h5>友情链接:</h5>
+					<ul>
+
+						<li>
+							<a href="">火车票</a>
+							<a href="">中商情报网 </a>
+							<a href="">法律咨询</a>
+							<a href="">深圳地图</a>
+							<a href="">P2P网贷导航</a>
+							<a href="">名鞋库</a>
+							<a href="">万表网</a>
+							<a href="">慧聪网</a>
+						</li>
+						<li>
+							<a href="">叮当音乐网</a>
+							<a href="">114票务网</a>
+							<a href="">悠哉旅游网</a>
+							<a href="">儿歌视频大全</a>
+							<a href="">亲宝网</a>
+							<a href="">拍鞋网</a>
+							<a href="">中国丽人网</a>
+							<a href="">有缘婚恋网</a>
+						</li>
+						<li>
+							<a href="">马可波罗网</a>
+							<a href="">摇篮网</a>
+							<a href="">信用卡券</a>
+							<a href="">妈妈优惠券</a>
+							<a href=""> 梦芭莎网</a>
+							<a href="">千图网</a>
+							<a href="">老师留学</a>
+							<a href="">童鞋会</a>
+						</li>
+					</ul>
+
+					<p><a href="">更多>></a></p>
+				</div>
+
+	   <div class="renzheng">
+       	<span>京ICP证120075号  京ICP备10051110号-5 </span> <a href="">京公网安备11010502025623 </a>   <span>营业执照110105013673175 </span>    <span>食品流通许可证SP1101051510352397 </span>  
+       	
+       </div> 
+        
+        <div class="xukezheng">	
+        	<span>出版物经营许可证 新出发京零字第朝160018号</span>  <span>Copyright©2011-2015 版权所有 ZHE800.COM </span>
+        
+		</div>
+			
+		<div id="" class="xingyong">
+			<a href=""><img src="img/wangxing.jpg"/></a>
+			<a href=""><img src="img/chengxing.jpg"/></a>
+			<a href=""><img src="img/kexing.jpg"/></a>
+		</div>	
+		
+            </div>
+	</body>
+
+</html>

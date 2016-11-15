@@ -1,0 +1,75 @@
+{
+	"imgbox": [
+		{
+			"src": "pingpai1.jpg"
+		}, {
+			"src": "pingpai2.jpg"
+		}, {
+			"src": "pingpai3.jpg"
+		}
+	],
+	"imgboxtwo": [
+	     {
+	        "src":"hot (1).jpg"
+	     },
+	    {
+	        "src":"hot (2).jpg"
+	     },
+	
+	 {
+	        "src":"hot (3).jpg"
+	     },
+	
+	 {
+	        "src":"hot (4).jpg"
+	     },
+	 {
+	        "src":"hot (5).jpg"
+	     },
+	      {
+	        "src":"hot (6).jpg"
+	     },
+	      {
+	        "src":"hot (7).jpg"
+	     },
+	      {
+	        "src":"hot (8).jpg"
+	     },
+	      {
+	        "src":"hot (9).jpg"
+	     },
+	      {
+	        "src":"hot (10).jpg"
+	     },
+	      {
+	        "src":"hot (11).jpg"
+	     },
+	      {
+	        "src":"hot (12).jpg"
+	     },
+	      {
+	        "src":"hot (13).jpg"
+	     },
+	      {
+	        "src":"hot (14).jpg"
+	     },
+	      {
+	        "src":"hot (15).jpg"
+	     },
+	      {
+	        "src":"hot (16).jpg"
+	     },
+	      {
+	        "src":"hot (17).jpg"
+	     },
+	      {
+	        "src":"hot (18).jpg"
+	     },
+	      {
+	        "src":"hot (19).jpg"
+	     },
+	      {
+	        "src":"hot (20).jpg"
+	     }
+	]
+}

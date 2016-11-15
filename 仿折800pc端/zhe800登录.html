@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+	i,em,u{
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	text-decoration: none;
+	font-style: normal;
+	color: #999999;
+	margin-left: 90px;
+	display: none;
+}
+u,em{
+	color: red;
+}
+		
+			.logo {
+				overflow: hidden;
+				clear: both;
+				position: relative;
+			
+				background:white;
+			}
+			
+			.logo h1 {
+				padding: 21px 0px 14px 150px;
+			}
+			body{
+				padding-left: 100px;
+				background:#f6f6f6;
+			}
+			p{
+				margin-top: 40px;
+				height: 50px;
+				width: 420px;
+			}
+			input{
+				line-height: 35px;
+				width: 290px;
+				border-radius: 8px;
+				border: none;
+				border: 1px solid #AFAFAF;
+				outline: none;
+			}
+			.denglu{
+				background: white;
+				overflow: hidden;
+				height: 500px;
+				padding-left: 50px;
+			}
+			.last{
+				width: 120px;
+			}
+			.denglu_left,.denglu_right{
+				float: left;
+				width: 380px;
+				
+			}
+			.denglu_right{
+				padding-left: 150px;
+				padding-top: 30px;
+			}
+			.linagwai{
+				padding-top: 40px;
+			}
+			.linagwai a{
+				margin-left: 70px;
+			}
+			
+			.tongyi input{
+				
+				width: 15px;
+			}
+			.tongyi{
+				clear: both;
+			}
+			.tongyi input span{
+				line-height:24px;
+				font-size: 12px;
+			}
+			.zhuce{
+				line-height: 34px;
+				width: 190px;
+				border: none;
+				color: white;
+				font-size: 14px;
+				
+				background: #ff3b37;
+				margin-top:40px;
+				text-align: center;
+				margin-left: 60px;
+			}
+			p img{
+				position: relative;
+				top: 10px;
+				left: 10px;
+				display: none;
+			}
+			.yanz{
+				position: relative;
+			}
+			
+			.yanz a{
+				left: 240px;
+				top: 5px;
+				position: absolute;
+				display: block;
+				width: 100px;
+				height: 30px;
+				background: #E5E5E5;
+				color: black;
+				font-size: 12px;
+				line-height:30px;
+				text-align: center;
+				cursor: pointer;
+			}
+		</style>
+<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		     $(function(){
+		            $(".sjh").focus(function(){
+		            	$(this).parents("p").find("i").show()
+		            	$(this).parents("p").find("em").hide();
+		            	$(this).parents("p").find("u").hide();
+		            })
+		     	    
+		     	    $(".sjh").blur(function(){
+		     	    	$(this).parents("p").find("i").hide()
+                    
+		     	    	 if ($(this).val()=="") {
+		     	    	 	$(this).parents("p").find("i").hide();
+		     	    	 	$(this).parents("p").find("em").show();
+		     	    	 	$(this).parents("p").find("u").hide();
+		     	    	 	$(this).parents("p").find("em").css("color","red")
+		     	    	 	return;
+		     	    	 }
+		     	    	
+		     	    	  var reg = /^[1]\d{10}$/;
+                          if (!reg.test($(this).val())&&!$(this).val()=="") {
+						       $(this).parents("p").find("u").show()
+						       $(this).parents("p").find("i").hide();
+						       $(this).parents("p").find("em").hide();
+						       return;
+				          	}
+                                  
+                            $(this).parents("p").find("img").show();    
+                                
+		     	    })
+		     	    	
+		     	$(".mima").focus(function(){
+		     		  $(this).parents("p").find("i").show()
+		              $(this).parents("p").find("em").hide();
+		              $(this).parents("p").find("u").hide();
+		     		
+		     	})
+		     	 $(".mima").blur(function(){
+		     	 	$(this).parents("p").find("i").hide()
+                    
+		     	    	 if ($(this).val()=="") {
+		     	    	 	$(this).parents("p").find("i").hide();
+		     	    	 	$(this).parents("p").find("em").show();
+		     	    	 	$(this).parents("p").find("u").hide();
+		     	    	 	$(this).parents("p").find("em").css("color","red")
+		     	    	 	return;
+		     	    	 }
+		     	    	
+		     	    	  var reg =/^(?!\d{1,8}$)[\S]{6,24}$/;
+                          if (!reg.test($(this).val())&&!$(this).val()=="") {
+						       $(this).parents("p").find("u").show()
+						       $(this).parents("p").find("i").hide();
+						       $(this).parents("p").find("em").hide();
+						       return;
+				          	}
+                              
+                           self= $(this).val()  
+                            $(this).parents("p").find("img").show();   
+		     	 	
+		     	 	
+		     	 	
+		     	 })
+		     	 
+		     	 
+		     	   	    	
+		     	$(".zaici").focus(function(){
+		     		  $(this).parents("p").find("i").show()
+		              $(this).parents("p").find("em").hide();
+		              $(this).parents("p").find("u").hide();
+		     		
+		     	})
+		     	 $(".zaici").blur(function(){
+		     	 	$(this).parents("p").find("i").hide()
+                    
+		     	    	 if ($(this).val()=="") {
+		     	    	 	$(this).parents("p").find("i").hide();
+		     	    	 	$(this).parents("p").find("em").show();
+		     	    	 	$(this).parents("p").find("u").hide();
+		     	    	 	$(this).parents("p").find("em").css("color","red")
+		     	    	 	return;
+		     	    	 }
+		     	    	
+		     	    	  
+                          if ($(this).val()!= self&&!$(this).val()=="") {
+						       $(this).parents("p").find("u").show()
+						       $(this).parents("p").find("i").hide();
+						       $(this).parents("p").find("em").hide();
+						       return;
+				          	}
+                              
+                           self= $(this).val()  
+                            $(this).parents("p").find("img").show();   
+		     	 	
+		     	 	
+		     	 	
+		     	 })
+		     	 
+		     	 
+		     	 
+		     	 
+		     	 
+		    
+		     	$(".yanz a").click(function(){
+		     		var temp = "";
+					for (var i = 0;i < 4;i++) {
+						temp += parseInt(Math.random()*10);
+					}
+		     		
+		     		$(this).text(temp)
+		     	})
+		     	
+		     	
+		     	$(".zhuce").click(function(){
+		     		
+
+              window.history.back(-1);
+
+		     		
+		     		
+		     	})
+		  
+		     	    
+		     })
+//		
+//		 onload=function(){
+//		     	
+//		   
+//		     	yzmkuang.onclick = function(){
+//					var temp = "";
+//					for (var i = 0;i < 4;i++) {
+//						temp += parseInt(Math.random()*10);
+//					}
+//					yzmkuang.innerHTML = temp;
+//				}
+//            }
+		
+	</script>
+	
+	
+	</head>
+
+	<body>
+		<div class="logo">
+			<h1><a href=""><img src="img/logo_zhe800.png"/></a></h1>
+		</div>
+		<div class="denglu">
+			<div class="denglu_left">
+				
+		          <p>手机号：&nbsp;	<input type="text" id="" value="" placeholder="手机号码" class="sjh"/><img src="img/dui.png"/>
+		               <i>为了您的安全，请填写常用手机号</i>
+		               <em>请输入手机号</em>
+		               <u>手机号格式错误</u>
+		               
+		          </p>	
+				  
+				  <p>密码&nbsp;：&nbsp;   <input type="password" id="" value="" class="mima"/><img src="img/dui.png"/>
+				  <i>6-24位字符，不能是纯数字，不能含空格</i>
+				   <em>请输入密码</em>
+				   <u>密码格式错误</u>
+				  </p>
+				  
+				  <p>确认密码： <input type="password" class="zaici"/><img src="img/dui.png"/>
+				  <i>请再次输入密码</i>
+				   <em>再次输入不能为空</em>
+				   <u>两次密码不一致</u>
+				    
+				   
+				  </p> 
+				  
+				 
+				 
+				 <p class="yanz">验证码：&nbsp; <input type="text" id="" value="" class="last"/><img src="img/dui.png" class="yzm"/><img src="img/dui.png"/>
+				    <i>请输入正确验证码</i>
+				 
+				 <a class="yzmkuang">点击获取验证码</a>
+				  
+				  </p> 
+			</div>
+			
+			<div class="denglu_right">
+				<img src="img/dlu.jpg"/>
+				<div id="" class="linagwai">
+					<a href=""><img src="img/qq.jpg"/></a>
+					<a href=""><img src="img/baidu.jpg"/></a>
+				</div>
+				
+			</div>
+			
+			<div class="tongyi">
+	   	<input type="checkbox" name="" id="" value="" /><span id="">
+	   		我已经认真阅读并同意折800的《用户注册协议》
+	   	</span>
+	   </div>
+			
+			<div id="" >
+				<input type="" name="" id="" value="同意协议并注册" class="zhuce"/>
+			</div>
+		</div>
+	      
+	</body>
+
+</html>
